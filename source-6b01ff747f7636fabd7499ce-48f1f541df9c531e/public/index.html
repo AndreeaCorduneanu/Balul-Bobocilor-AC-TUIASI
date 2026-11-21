@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Walk of Fame · Balul Bobocilor · LSAC Iași</title>
+  <meta name="description" content="Balul Bobocilor: Walk of Fame, directed by LSAC Iași. Meet the five couples and vote for your favourite. 6 December, Vivid Lounge." />
+  <meta name="theme-color" content="#0f1f1c" />
+  <meta property="og:title" content="Walk of Fame · Balul Bobocilor" />
+  <meta property="og:description" content="Five couples. One star. Cast your popularity vote." />
+  <meta property="og:image" content="/img/header-warm.jpg" />
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..700&family=Jost:wght@300;400;500;600&family=Pinyon+Script&display=swap" />
+  <link rel="preload" as="image" href="/img/header-warm.jpg" fetchpriority="high" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="topbar__mark" href="#top" aria-label="Back to top">
+      <span class="script">Balul Bobocilor</span>
+      <span class="topbar__title">Walk of Fame</span>
+    </a>
+    <nav class="topbar__nav" aria-label="Sections">
+      <a href="#nominees">The Couples</a>
+      <a href="#vote" class="topbar__cta">Vote</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO: the title card holds the screen, then dissolves into the opening text as you scroll -->
+    <section class="hero" id="hero" aria-label="Balul Bobocilor: Walk of Fame">
+      <div class="hero__stage">
+        <img
+          class="hero__img"
+          id="heroImg"
+          src="/img/header-warm.jpg"
+          width="1179"
+          height="1248"
+          alt="Balul Bobocilor: Walk of Fame, directed by LSAC Iași. 6 December, Vivid Lounge."
+          fetchpriority="high"
+          decoding="async"
+        />
+
+        <div class="hero__text" id="heroText">
+          <p class="eyebrow">6 December &middot; Vivid Lounge &middot; Iași</p>
+          <h1 class="hero__headline">
+            Five couples.<br />
+            <em>One star</em> on the Walk.
+          </h1>
+          <p class="hero__lede">
+            This year's freshers' ball, directed by LSAC Iași, turns Vivid Lounge into a boulevard of
+            premieres. Five couples have each stepped into their own film. Scroll down to meet them,
+            then cast your vote for the pair who deserves the brightest star.
+          </p>
+          <a class="btn btn--ghost" href="#nominees">Meet the couples</a>
+        </div>
+
+        <div class="hero__cue" id="heroCue" aria-hidden="true">
+          <span>Scroll</span>
+          <i></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOMINEES -->
+    <section class="nominees" id="nominees" aria-labelledby="nominees-title">
+      <div class="nominees__head reveal">
+        <p class="eyebrow eyebrow--red">Now showing</p>
+        <h2 id="nominees-title" class="section-title">The Couples</h2>
+        <p class="section-sub">Five posters, five stories, one red carpet.</p>
+      </div>
+
+      <ol class="reel">
+        <li class="take reveal" data-couple="1">
+          <figure class="poster">
+            <div class="poster__frame">
+              <img src="/img/couple-1.jpeg" width="1179" height="1285" loading="lazy" decoding="async"
+                   alt="Couple 1 dancing at dusk on a hilltop overlook beside a street lamp, the city lights glowing below." />
+            </div>
+            <figcaption class="poster__slate"><span>Take 01</span><span>Walk of Fame</span></figcaption>
+          </figure>
+          <div class="take__copy">
+            <span class="take__num" aria-hidden="true">01</span>
+            <p class="eyebrow eyebrow--red">Couple Nº 1</p>
+            <h3 class="take__title">La La Land (2016)</h3>
+            <a class="take__vote" href="#vote" data-pick="1">Vote for Couple 1 <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </li>
+
+        <li class="take take--flip reveal" data-couple="2">
+          <figure class="poster">
+            <div class="poster__frame">
+              <img src="/img/couple-2.jpeg" width="1179" height="1259" loading="lazy" decoding="async"
+                   alt="Couple 2 in leather jackets on a rain-soaked lot at night, a red convertible and a neon diner behind them." />
+            </div>
+            <figcaption class="poster__slate"><span>Take 02</span><span>Walk of Fame</span></figcaption>
+          </figure>
+          <div class="take__copy">
+            <span class="take__num" aria-hidden="true">02</span>
+            <p class="eyebrow eyebrow--red">Couple Nº 2</p>
+            <h3 class="take__title">Grease (1978)</h3>
+            <a class="take__vote" href="#vote" data-pick="2">Vote for Couple 2 <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </li>
+
+        <li class="take reveal" data-couple="3">
+          <figure class="poster">
+            <div class="poster__frame">
+              <img src="/img/couple-3.jpeg" width="1179" height="1272" loading="lazy" decoding="async"
+                   alt="Couple 3 on a sunny beach under palm trees, surfboards leaning against a bamboo hut." />
+            </div>
+            <figcaption class="poster__slate"><span>Take 03</span><span>Walk of Fame</span></figcaption>
+          </figure>
+          <div class="take__copy">
+            <span class="take__num" aria-hidden="true">03</span>
+            <p class="eyebrow eyebrow--red">Couple Nº 3</p>
+            <h3 class="take__title">Teen Beach Movie (2013)</h3>
+            <a class="take__vote" href="#vote" data-pick="3">Vote for Couple 3 <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </li>
+
+        <li class="take take--flip reveal" data-couple="4">
+          <figure class="poster">
+            <div class="poster__frame">
+              <img src="/img/couple-4.jpeg" width="1179" height="1286" loading="lazy" decoding="async"
+                   alt="Couple 4 in a lamplit stone courtyard beneath a balcony, sharing a single red rose." />
+            </div>
+            <figcaption class="poster__slate"><span>Take 04</span><span>Walk of Fame</span></figcaption>
+          </figure>
+          <div class="take__copy">
+            <span class="take__num" aria-hidden="true">04</span>
+            <p class="eyebrow eyebrow--red">Couple Nº 4</p>
+            <h3 class="take__title">Romeo &amp; Julieta</h3>
+            <a class="take__vote" href="#vote" data-pick="4">Vote for Couple 4 <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </li>
+
+        <li class="take reveal" data-couple="5">
+          <figure class="poster">
+            <div class="poster__frame">
+              <img src="/img/couple-5.jpeg" width="1179" height="1295" loading="lazy" decoding="async"
+                   alt="Couple 5 standing back to back in black outfits inside a dim, brass-lit bar with a billiard table." />
+            </div>
+            <figcaption class="poster__slate"><span>Take 05</span><span>Walk of Fame</span></figcaption>
+          </figure>
+          <div class="take__copy">
+            <span class="take__num" aria-hidden="true">05</span>
+            <p class="eyebrow eyebrow--red">Couple Nº 5</p>
+            <h3 class="take__title">Back to Black (2024)</h3>
+            <a class="take__vote" href="#vote" data-pick="5">Vote for Couple 5 <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- POLL -->
+    <section class="poll" id="vote" aria-labelledby="poll-title">
+      <div class="poll__head reveal">
+        <p class="eyebrow eyebrow--brass">Popularity vote</p>
+        <h2 id="poll-title" class="section-title section-title--light">Who earns the star?</h2>
+        <p class="section-sub section-sub--light">Choose your favourite couple. One vote per device, and you can change your mind until the ball.</p>
+      </div>
+
+      <form class="ballot" id="ballot" novalidate>
+        <fieldset class="walk">
+          <legend class="sr-only">Pick a couple</legend>
+
+          <label class="plaque" data-couple="1">
+            <input type="radio" name="couple" value="1" />
+            <span class="plaque__thumb"><img src="/img/couple-1.jpeg" width="1179" height="1285" loading="lazy" alt="" /></span>
+            <span class="plaque__star" aria-hidden="true"><svg viewBox="0 0 100 96"><use href="#star" /></svg><b>1</b></span>
+            <span class="plaque__name">La La Land (2016)</span>
+            <span class="plaque__cat">Couple Nº 1</span>
+            <span class="plaque__result"><span class="bar"><i></i></span><span class="pct">&nbsp;</span></span>
+            <span class="plaque__badge"></span>
+          </label>
+
+          <label class="plaque" data-couple="2">
+            <input type="radio" name="couple" value="2" />
+            <span class="plaque__thumb"><img src="/img/couple-2.jpeg" width="1179" height="1259" loading="lazy" alt="" /></span>
+            <span class="plaque__star" aria-hidden="true"><svg viewBox="0 0 100 96"><use href="#star" /></svg><b>2</b></span>
+            <span class="plaque__name">Grease (1978)</span>
+            <span class="plaque__cat">Couple Nº 2</span>
+            <span class="plaque__result"><span class="bar"><i></i></span><span class="pct">&nbsp;</span></span>
+            <span class="plaque__badge"></span>
+          </label>
+
+          <label class="plaque" data-couple="3">
+            <input type="radio" name="couple" value="3" />
+            <span class="plaque__thumb"><img src="/img/couple-3.jpeg" width="1179" height="1272" loading="lazy" alt="" /></span>
+            <span class="plaque__star" aria-hidden="true"><svg viewBox="0 0 100 96"><use href="#star" /></svg><b>3</b></span>
+            <span class="plaque__name">Teen Beach Movie (2013)</span>
+            <span class="plaque__cat">Couple Nº 3</span>
+            <span class="plaque__result"><span class="bar"><i></i></span><span class="pct">&nbsp;</span></span>
+            <span class="plaque__badge"></span>
+          </label>
+
+          <label class="plaque" data-couple="4">
+            <input type="radio" name="couple" value="4" />
+            <span class="plaque__thumb"><img src="/img/couple-4.jpeg" width="1179" height="1286" loading="lazy" alt="" /></span>
+            <span class="plaque__star" aria-hidden="true"><svg viewBox="0 0 100 96"><use href="#star" /></svg><b>4</b></span>
+            <span class="plaque__name">Romeo &amp; Julieta</span>
+            <span class="plaque__cat">Couple Nº 4</span>
+            <span class="plaque__result"><span class="bar"><i></i></span><span class="pct">&nbsp;</span></span>
+            <span class="plaque__badge"></span>
+          </label>
+
+          <label class="plaque" data-couple="5">
+            <input type="radio" name="couple" value="5" />
+            <span class="plaque__thumb"><img src="/img/couple-5.jpeg" width="1179" height="1295" loading="lazy" alt="" /></span>
+            <span class="plaque__star" aria-hidden="true"><svg viewBox="0 0 100 96"><use href="#star" /></svg><b>5</b></span>
+            <span class="plaque__name">Back to Black (2024)</span>
+            <span class="plaque__cat">Couple Nº 5</span>
+            <span class="plaque__result"><span class="bar"><i></i></span><span class="pct">&nbsp;</span></span>
+            <span class="plaque__badge"></span>
+          </label>
+        </fieldset>
+
+        <div class="ballot__foot">
+          <button type="submit" class="btn btn--red" id="castBtn" disabled>Cast my vote</button>
+          <p class="ballot__status" id="ballotStatus" role="status" aria-live="polite">Pick a star to vote.</p>
+          <p class="ballot__total" id="ballotTotal" aria-live="polite"></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="script footer__script">Balul Bobocilor</p>
+    <p class="footer__title">Walk of Fame</p>
+    <p class="footer__meta">Directed by LSAC Iași &middot; 6 December &middot; Vivid Lounge</p>
+  </footer>
+
+  <!-- Shared star shape for the poll plaques -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <path id="star" d="M50 3 L61.8 36.2 L97 37.1 L69.1 58.8 L79.4 92.6 L50 72.6 L20.6 92.6 L30.9 58.8 L3 37.1 L38.2 36.2 Z" />
+    </defs>
+  </svg>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
